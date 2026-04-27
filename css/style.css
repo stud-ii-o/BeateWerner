@@ -83,6 +83,24 @@ body {
   font-weight: 700;
 }
 
+.quotes {
+  position: relative;
+  height: 3em; /* verhindert Layout-Sprung */
+}
+
+.quote {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.quote.active {
+  opacity: 1;
+}
+
 .brand p {
   margin: 8px 0 0;
 }
@@ -223,6 +241,25 @@ body {
   justify-content: center;
   font-size: var(--fs-section-title);
   font-weight: 700;
+}
+
+.photo-box {
+  overflow: hidden;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-box img {
+  transition: transform 0.3s ease;
+}
+
+.photo-box:hover img {
+  transform: scale(1.03);
 }
 
 .map-box iframe {
