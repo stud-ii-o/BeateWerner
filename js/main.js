@@ -31,5 +31,5 @@ if (quotes.length > 0) {
     quotes[index].classList.remove("active");
     index = (index + 1) % quotes.length;
     quotes[index].classList.add("active");
-  }, 3000);
+  }, 4000);
 }
